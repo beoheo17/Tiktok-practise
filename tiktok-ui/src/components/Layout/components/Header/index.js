@@ -14,7 +14,7 @@ function Header() {
                     <img src={images.logo} alt="TIK TOK" />
                 </div>
                 <div className={cx('search')}>
-                    <input placeholder="searchhh account and videos" spellCheck={false} />
+                    <input placeholder="search account and videos" spellCheck={false} />
                     <button className={cx('clear')}>
                         <FontAwesomeIcon icon={faCircleXmark} />
                     </button>
