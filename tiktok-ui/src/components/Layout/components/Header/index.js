@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
 
+import Button from '~/components/Button';
 import { wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
@@ -52,7 +53,16 @@ function Header() {
                         </button>
                     </div>
                 </Tippy>
-                <div className={cx('actions')}></div>
+                <div className={cx('actions')}>
+                    {/* <Button primary href="https://www.facebook.com/" target="_blank"> */}
+                    {/* target = "_blank " để mở trang web bằng tab mới */}
+                    <Button text>Upload</Button>
+                    {/* <Button primary leftIcon={<FontAwesomeIcon icon={faSignIn} />}> */}
+                    <Button primary>Login</Button>
+                    <Button rounded className={cx('custom-getapp')}>
+                        Get app
+                    </Button>
+                </div>
             </div>
         </header>
     );
